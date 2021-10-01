@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
@@ -19,78 +18,83 @@
 </head>
 
 <body>
-  <div class="center">
+  <div class="outerbox">
     <div class="splitter">
-      <img src="/images/logo.svg" alt="splitter" class="center">
+      <img src="images/logo.svg" alt="logo">
     </div>
-    <div class="kart">
-      <div class="in">
-        <div class="bill">
-          <div class="label">
-            <label for="bill2">Bill</label>
+
+    <div class="first">
+      <div class="inside">
+        <div class="bill-outerbox">
+          <div class="label-wrapper">
+            <label for="inp-bill">Bill</label>
           </div>
 
-          <div class="wrapper"></div>
-          <input class="text" type="text" name="bill" id="bill" placeholder="0.0">
-          <img class="img1" src="./images/icon-dollar.svg" alt="dollar-icon">
-
+          <div class="inp-wrapper">
+            <input class="inp-text" type="text" name="inp-bill" id="inp-bill" placeholder="0.0">
+            <img src="images/icon-dollar.svg" alt="dollar-icon">
+          </div>
         </div>
-        <div class="tip">
-          <div class="label">
+
+
+
+
+        <div class="tip-outerbox">
+          <div class="label-wrapper">
             <label for="inp-tip">Select Tip %</label>
           </div>
-          <div class="wrapper2">
-            <div class="btn tip2">5%</div>
-            <div class="btn tip2">10%</div>
-            <div class="btn tip2 active">15%</div>
-            <div class="btn tip2">25%</div>
-            <div class="btn tip2">50%</div>
-            <input class="text" type="tip" name="tip" id="tip" placeholder="Custom">
-
-
+          <div class="btn-wrapper">
+            <div class="btn tip">5%</div>
+            <div class="btn tip">10%</div>
+            <div class="btn tip btn-active">15%</div>
+            <div class="btn tip">25%</div>
+            <div class="btn tip">50%</div>
+            <input class="inp-text" type="text" name="inp-tip" id="inp-tip" placeholder="Custom">
           </div>
-
-
-
         </div>
-        <div class="persons">
-          <div class="label">
-            <label for="persons2">Number of People</label>
-            <div class="error">Can't be zero</div>
+
+
+
+
+
+        <div class="people-outerbox">
+          <div class="label-wrapper">
+            <label for="inp-people">Number of Persons</label>
+            <div class="error-msg">Can't be zero</div>
           </div>
 
-
-          <div class="wrapper"></div>
-          <input class="text" type="text" name="persons2" id="persons2" placeholder="1">
-          <img class="img2" src="./images/icon-person.svg" alt="person-icon">
-
+          <div class="inp-wrapper">
+            <input class="inp-text" type="text" name="inp-people" id="inp-people" placeholder="1">
+            <img src="images/icon-person.svg" alt="person-icon">
+          </div>
         </div>
       </div>
-      <div class="out">
-        <div class="line">
-          <div class="line-output">
+
+
+      <div class="outside">
+        <div class="line-wrapper">
+          <div class="line-outside">
             <div class="title-wrapper">
               <div class="title">Tip Amount</div>
-              <div class="desc">/ person</div>
+              <div class="desc">per person</div>
             </div>
-            <div class="value"> $4.27</div>
+            <div class="value">$0.00</div>
           </div>
-          <div class="line-output">
+
+          <div class="line-outside">
             <div class="title-wrapper">
               <div class="title">Total</div>
-              <div class="desc">/ person</div>
+              <div class="desc">per person</div>
             </div>
-            <div class="value"> $32.79</div>
+            <div class="value">$0.00</div>
+          </div>
         </div>
-        <div class="btn">Reset</div>
+        <div class="btn reset">Reset Button</div>
       </div>
     </div>
-
   </div>
 
   <script src="app.js"></script>
-
-
 </body>
 
 </html>
